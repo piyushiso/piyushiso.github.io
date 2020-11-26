@@ -1,0 +1,330 @@
+<html lang="en">
+
+    <head>
+        
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <title>Work Report System</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+        <link rel="stylesheet" href="./pdf_shell.css" />
+        <link rel="icon" href="./assets/images/icons/write.png"/>
+
+    </head>
+    
+    <body class="mt-5">
+        
+        <!-- LEFT SIDE SETTINGS SECTION. -->
+        <div id="settings">
+
+            <!-- UPPER SECTION. -->
+            <div>
+
+                <!-- NEW WINDOW. -->
+                <div id="new_window" data-toggle="tooltip" data-placement="right" data-html="true" title="<h4>New window</h4>">
+                    <span class="iconify" data-inline="false" data-icon="carbon:new-tab"></span>
+                </div>
+                
+                <!-- DUPLICATE WINDOW. -->
+                <div id="duplicate_window" data-toggle="tooltip" data-placement="right" data-html="true" title="<h4>Duplicate data</h4>">
+                    <span class="iconify" data-inline="false" data-icon="heroicons-solid:document-duplicate"></span>
+                </div>
+                
+                <!-- EXPORT PDF. -->
+                <div id="export_pdf" data-toggle="tooltip" data-placement="right" data-html="true" title="<h4>Export as PDF</h4>" class="export_pdf">
+                    <span class="iconify" data-inline="false" data-icon="bx:bxs-file-export"></span>
+                </div>
+
+                <!-- SHOW DEMO. -->
+                <div id="show_demo" data-toggle="tooltip" data-placement="right" data-html="true" title="<h4>Demo</h4>">
+                    <span class="iconify" data-inline="false" data-icon="file-icons:api-blueprint"></span>
+                </div>
+        
+            </div>
+            
+            <!-- LOWER SECTION. -->
+            <div>
+        
+                <!-- RESET DATA. -->
+                <div id="reset_data" data-toggle="tooltip" data-placement="right" data-html="true" title="<h4>Reset data</h4>">
+                    <span class="iconify" data-inline="false" data-icon="carbon:reset"></span>
+                </div>
+        
+                <!-- CLOSE WINDOW. -->
+                <div id="close_tab" data-toggle="tooltip" data-placement="right" data-html="true" title="<h4>Close window</h4>">
+                    <span class="iconify" data-inline="false" data-icon="ant-design:close-circle-outlined"></span>
+                </div>
+        
+            </div>
+        
+        </div>
+
+        <div id="pdf_shell" class="block-container" style="background:#FEFCFD;">
+            
+            <!-- WORK TITLE. -->
+            <div class="block1">
+                <p id="work_title_label" data-rep="work_title" data-def="Work Title" class="text_labels" contenteditable="true" default-value="Work Title" >Work Title</p>
+                <!-- REPORTED ON. -->
+                <p>Report of: <span contenteditable="true" id="reported_on_label" data-def="Date." class="text_labels">Date.</span></p>
+            </div>
+
+            <!-- TASKED BY/ON. -->
+            <div class="block2">
+                
+                <!-- TASKED BY. -->
+                <p>
+                    <span>Tasked by:</span>
+                    <!-- EDITABLE PART. -->
+                    <span contenteditable="true" data-rep="tasked_by" data-def="Name." id="tasked_by_label" class="text_labels">Name.</span>
+                </p>
+
+                <!-- TASKED ON. -->
+                <p>
+                    <span>Tasked on:</span>
+                    <!-- EDITABLE PART. -->
+                    <span contenteditable="true" data-def="Date, Time, Via." class="text_labels">Date, Time, Via.</span>
+                </p>
+
+            </div>
+
+            <!-- STARTED/COMPLETED ON. -->
+            <div class="block2">
+                
+                <!-- STARTED ON. -->
+                <p>
+                    <span>Started on:</span>
+                    <!-- EDIATBLE PART. -->
+                    <span contenteditable="true" data-def="Date, Time." class="text_labels">Date, Time.</span>
+                </p>
+                
+                <!-- COMPLETED ON. -->
+                <p>
+                    <span>Completed on:</span>
+                    <!-- EDITABLE PART. -->
+                    <span contenteditable="true" data-def="Date, Time (Time Contributed: In hours or minutes [optional])." class="text_labels">Date, Time (Time Contributed: In hours or minutes [optional]).</span>
+                </p>
+            
+            </div>
+
+            <!-- IMAGE, IMAGE DESCRIPTION AND WORK DESCRIPTION. -->
+            <div id="image_section" class="block3">
+                
+                <!-- IMAGE AS DIV'S BACKGROUND. -->
+                <div>
+                    <!-- EDITABLE. -->
+                    <p contenteditable="true" data-rep="image_des" class="text_labels" data-def="IMAGE DESCRIPTION." id="image_des_label">IMAGE DESCRIPTION.</p>
+                </div>
+                
+                <!-- WORK DESCRIPTION. -->
+                <div style="background-color: #281E37;">
+                    <p>Work Description</p>
+                    <!-- EDITABLE. -->
+                    <p contenteditable="true" data-rep="work_des" class="text_labels" data-def="Description here" id="work_des_label">
+                        Description here.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ORGANIZATIONS & CONTRIBUTORS. -->
+            <div class="block4">
+                
+                <!-- ORGANIZATIONS. -->
+                <div id="organizations">
+                    <p>ORGANIZATION(S)</p>
+                    <div id="organization_images">
+                        
+                        <!-- DEFAULT. -->
+                        <div id="def_organizations">
+                            <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1584441405886-bc91be61e56a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=671&q=80"/>
+                            <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1572094382897-21abe88fb269?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+                        </div>
+
+                        <!-- ACTUAL. -->
+                        <div id="actual_organizations"></div>
+
+                    </div>
+                </div>
+                
+                <!-- CONTRIBUTORS. -->
+                <div id="contributors">
+                    <p>CONTRIBUTOR(S)</p>
+                    <div id="contributor_images">
+                        
+                        <!-- DEFAULT. -->
+                        <div id="def_contributors">
+                            <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+                            <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+                            <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+                        </div>
+                        
+                        <!-- ACTUAL. -->
+                        <div id="actual_contributors"></div>
+                            
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- EDITING SECTION. -->
+        <div id="editors">
+            
+            <!-- HEADING. -->
+            <div>
+                <p>
+                    <span class="iconify" data-inline="false" data-icon="ant-design:edit-filled"></span>
+                    Edit
+                </p>
+            </div>
+            
+            <div>
+                
+                <form>
+                    
+                    <!-- WORK TITLE. -->
+                    <div class="form-group">
+                        <label for="work_title_input">Work Title:</label>
+                        <input type="text" class="form-control text_inputs" data-rep="work_title" placeholder="(Example: Banner for Dashain of 2077)" id="work_title_input">
+                    </div>
+
+                    <!-- TASKED BY. -->
+                    <div class="form-group">
+                        <label for="tasked_by_input">Tasked by:</label>
+                        <input type="text" class="form-control text_inputs" data-rep="tasked_by" placeholder="(Example: Mr. Anurag Adhikari)" id="tasked_by_input">
+                    </div>
+                    
+                    <!-- IMAGE -->
+                    <div class="form-group">
+                        <details>
+                            <summary>Image options:</summary>
+                            <div class="ml-3 mt-1">
+                                <!-- IMAGE DESCRIPTION. -->
+                                <div class="form-group">
+                                    <label for="image_des_input">Image Description:</label>
+                                    <input type="text" class="form-control text_inputs" data-rep="image_des" placeholder="(Example: Snap of certificate with caption)" id="image_des_input">
+                                </div>
+                                <!-- IMAGE UPLOAD. -->
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile" accept="image/*">
+                                    <label class="custom-file-label" for="customFile">Choose image</label>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+
+
+                    <!-- ORGANIZATION(S). -->
+                    <div class="form-group">
+                        <details id="contributor_settings">
+                            <summary>Organization(s):</summary>
+
+                            <!-- Hetauda School of Management and Social Sciences -->
+                            <div class="form-group form-check mt-1 ml-3">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input or-var" value="" data-filename="HSMSS_Logo" checked="" data-shown="false">&nbsp;Hetauda School of Management and Social Sciences
+                                </label>
+                            </div>
+                            
+                            <!-- HSM Alliance. -->
+                            <div class="form-group form-check mt-1 ml-3">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input or-var" value="" data-filename="HSM_Alumni_Logo" checked="" data-shown="false">&nbsp;HSM Alumni
+                                </label>
+                            </div>
+
+                            <!-- BIZ TALK. -->
+                            <div class="form-group form-check mt-1 ml-3">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input or-var" value="" data-filename="HSM_BIZ_TALK_Logo" checked="" data-shown="false">&nbsp;HSM Biz Talk
+                                </label>
+                            </div>
+
+                            <!-- Navodaya Shishu Sadan Secondary School. -->
+                            <div class="form-group form-check mt-1 ml-3">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input or-var" value="" data-filename="Navaodaya_Logo" checked="" data-shown="false">&nbsp;Navodaya Shishu Sadan Secondary School
+                                </label>
+                            </div>
+
+                            <!-- See all. -->
+                            <div class="form-group form-check mt-1 ml-3">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input" value="" onclick="checkAll('contributor_settings')" disabled>&nbsp;Select all
+                                </label>
+                            </div>    
+                        </details>    
+                    </div>
+
+                    <!-- CONTRIBUTOR(S). -->
+                    <div class="form-group">
+                        <details id="contributor_settings">
+                            <summary>Contributor(s):</summary>
+                            <div class="form-group form-check mt-1 ml-3">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input cb-var" value="" data-filename="Jagat_Jung_Lakandri_BK" checked="" data-shown="false">&nbsp;Jagat Jung Lakandri B. K.
+                                </label>
+                            </div>
+                            <div class="form-group form-check mt-1 ml-3">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input cb-var" value="" data-filename="Nikita_Acharya" checked="" data-shown="false">&nbsp;Nikita Acharya
+                                </label>
+                            </div>
+                            <div class="form-group form-check mt-1 ml-3">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input cb-var" value="" data-filename="Piyush_Lal_Shrestha" checked="" data-shown="false">&nbsp;Piyush Lal Shrestha
+                                </label>
+                            </div>
+                            <div class="form-group form-check mt-1 ml-3">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input" value="" onclick="checkAll('contributor_settings')" disabled>&nbsp;Select all
+                                </label>
+                            </div>    
+                        </details>    
+                    </div>
+                    
+                    <!-- WORK DESCRIPTION. -->
+                    <div class="form-group">
+                        <label for="work_des_input">Work Description:</label>
+                        <textarea id="work_des_input" data-rep="work_des" rows="10" class="text_inputs" style="width: 470px; text-align: left;" placeholder="Work description here..."></textarea>
+                    </div>
+
+                </form>
+
+                <!-- EXPORT BUTTON. -->
+                <button class="btn btn-secondary export_pdf" data-toggle="tooltip" data-placement="left" data-html="true" title="<h6>Export as PDF</h6>">
+                    <span class="iconify" data-inline="false" data-icon="bx:bxs-file-export"></span>
+                    Export
+                </button>
+                <!-- <button class="btn btn-secondary" data-toggle="tooltip" data-placement="left" data-html="true" title="<h6>Export as PDF</h6>" onclick="printDiv()">
+                    <span class="iconify" data-inline="false" data-icon="bx:bxs-file-export"></span>
+                    Export
+                </button> -->
+
+            </div>
+            
+        </div>
+
+        <!-- FOOTER SECTION REQUIRED SCRIPTS. -->
+        <footer>
+            <!-- JQUERY. -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <!-- ICONIFY SCRIPT. -->
+            <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+            <!-- BS4 JQUERY. -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <!-- BS4 JS SCRIPT. -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- JSPDF SCRIPT. -->
+            <!-- <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script> -->
+            <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.debug.js"></script> -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+            <!-- CUSTOM JS SCRIPT. -->
+            <script language="javascript" type="module" src="./pdf_shell.js"></script>
+        </footer>
+
+    </body>
+
+</html>
