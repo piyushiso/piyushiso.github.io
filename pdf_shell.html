@@ -1,0 +1,94 @@
+<html lang="en">
+
+    <head>
+        
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <title>Work Report System</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./pdf_shell.css" />
+    
+    </head>
+    
+    <body>
+        
+        <div id="">
+
+        </div>
+
+        <div id="pdf_shell" class="block-container" style="background:#FEFCFD;">
+            
+            <div class="block1">
+                <p id="test" contenteditable="true" data-placeholder="Insert text here..." onchange="alert('o')" onclick="select_text(this)">Work Title</p>
+                <p>Report of: <span contenteditable="true">Date.</span></p>
+            </div>
+
+            <div class="block2">
+                <p>
+                    <span>Tasked by:</span>
+                    <span contenteditable="true">Name.</span>
+                </p>
+                <p>
+                    <span>Tasked on:</span>
+                    <span contenteditable="true">Date, Time, Via.</span>
+                </p>
+            </div>
+
+            <div class="block2">
+                <p>
+                    <span>Started on:</span>
+                    <span contenteditable="true" >Date, Time.</span>
+                </p>
+                <p>
+                    <span>Completed on:</span>
+                    <span contenteditable="true" >Date, Time (Time Contributed: In hours or minutes [optional]).</span>
+                </p>
+            </div>
+
+            <div class="block3">
+                <div>
+                    <p>IMAGE DESCRIPTION.</p>
+                </div>
+                <div style="background-color: #281E37;">
+                    <p>Work Description</p>
+                    <p>
+                        Description here.
+                    </p>
+                </div>
+            </div>
+
+            <div class="block4">
+                
+                <div>
+                    <p>ORGANIZATION(S)</p>
+                    <div>
+                        <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1584441405886-bc91be61e56a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=671&q=80"/>
+                        <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1572094382897-21abe88fb269?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+                    </div>
+                </div>
+                
+                <div>
+                    <p>CONTRIBUTOR(S)</p>
+                    <div>
+                        <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+                        <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+                        <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="settings">
+            
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script language="javascript" src="./pdf_shell.js"></script>
+
+    </body>
+
+</html>
