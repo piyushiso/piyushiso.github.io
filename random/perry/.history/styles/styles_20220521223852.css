@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@100&family=Poppins:wght@100;400;500;600;700&display=swap');
+
+:root{
+    --primary: #02B49E;
+    --font: 
+}
+
+body{
+    height:100%;
+    width:100%;
+    background: var(--primary);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div{
+    position: fixed;
+    bottom: 50;
+}
