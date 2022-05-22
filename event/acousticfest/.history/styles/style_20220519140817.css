@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100;400;500;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/choco-cookies');
+
+:root {
+    --bg: #0E0F13;
+    --primary: #FAFCFD;
+    --secondary: #A0A2A6;
+    --main-font: 'Poppins', sans-serif;
+    --secondary-font: 'Choco Cookies', sans-serif;
+    --bold: 700;
+    --semi-bold: 600;
+    --medium: 500; 
+    --regular: 400;
+    --t1: 64px;
+    --t2: 60px;
+    --t3: 38px;
+    --t4: 34px;
+    --t5: 30px;
+    --t6: 24px;
+    --t7: 20px;
+    --gap-x: 120px;
+    --gap-y: 60px;
+    --gap-sub: 30px;
+}
+
+body{
+    background: var(--bg);
+    color: var(--primary);
+    font-family: var(--main-font);
+    font-weight: var(--medium);
+    font-size: var(--t6);
+    letter-spacing: 5% !important;
+    background-image: url("../assets/images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right;
+    background-size: 30% 70%;
+}
+
+nav {
+    background: var(--bg) !important;
+}
+
+.navbar-dark, .bg-dark{
+    background: var(--bg) !important;
+    color: var(--primary);
+}
+
+.navbar-brand{
+    font-size: var(--t4);
+    color: var(--secondary);
+    font-weight: var(--semi-bold);
+}
+
+.nav-item a{
+    font-size: var(--t7);
+    font-weight: var(--regular);
+}
+
+nav div{
+    padding: var(--gap-y) var(--gap-x);
+}
+
+.active{
+    font-weight: var(--bold) !important;
+}
+
+.navbar ul li{
+    padding-left: 50px;
+}
+
+.primary{
+    color: var(--primary);
+}
+
+.secondary{
+    color: var(--secondary);
+}
+
+.components{
+    padding: var(--gap-y) var(--gap-x);
+}
+
+.contents{
+    /* max-height: 56%; */
+    border: solid thin red;
+    z-index: 3;
+}
+
+.hashtag{
+    padding: inherit;
+    font-size: var(--t7);
+    font-weight: var(--regular);
+    transition: .5s;
+}
+
+.hashtag span:hover{
+    color: var(--primary);
+    transition: .5s;
+    cursor: pointer;
+}

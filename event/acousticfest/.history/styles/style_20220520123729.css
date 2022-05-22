@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100;400;500;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/choco-cookies');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@100&family=Poppins:wght@100;500;600;700&display=swap');
+
+:root {
+    /* --bg: #0E0F13; */
+    --bg: #070709;
+    --primary: #FAFCFD;
+    --secondary: #A0A2A6;
+    --main-font: 'Poppins', sans-serif;
+    --secondary-font: 'Cookie', sans-serif;
+    --bold: 700;
+    --semi-bold: 600;
+    --medium: 500; 
+    --regular: 400;
+    --t1: 54px;
+    --t2: 50px;
+    --t3: 34px;
+    --t4: 30px;
+    --t5: 24px;
+    --t6: 20px;
+    --t7: 18px;
+    --gap-x: 120px;
+    --gap-y: 60px;
+    --gap-sub: 30px;
+}
+
+body{
+    background: var(--bg);
+    color: var(--primary);
+    font-family: var(--main-font);
+    font-weight: var(--medium);
+    font-size: var(--t6);
+    letter-spacing: 2.5px;
+    background-image: url("../assets/images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right;
+    background-size: 30% 70%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+nav {
+    background: var(--bg) !important;
+}
+
+nav > div{
+    padding: var(--gap-sub) var(--gap-x) !important;
+    padding-bottom: var(--gap-sub) !important;
+}
+
+.navbar-dark, .bg-dark{
+    background: var(--bg) !important;
+    color: var(--primary);
+}
+
+.navbar-brand{
+    font-size: var(--t4);
+    color: var(--secondary);
+    font-weight: var(--semi-bold);
+}
+
+.nav-item a{
+    font-size: var(--t7);
+    font-weight: var(--regular);
+}
+
+.active{
+    font-weight: var(--bold) !important;
+}
+
+.navbar ul li{
+    padding-left: 50px;
+}
+
+.primary{
+    color: var(--primary);
+}
+
+.secondary{
+    color: var(--secondary);
+}
+
+.components{
+    padding: var(--gap-y) var(--gap-x);
+}
+
+.contents{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: auto;
+    padding-left: 10px;
+    width: 50%;
+    /* overflow-x: hidden; */
+    /* overflow-y: scroll; */
+}
+
+.college-name{
+    font-size: var(--t5);
+    font-weight: var(--semi-bold) !important;
+    margin-top: 30px !important;
+}
+
+.college-name span:nth-child(1){
+    display: block;
+}
+
+.sub-text{
+    font-family: var(--secondary-font);
+    font-size: var(--t3);
+    font-weight: var(--regular);
+    color: var(--secondary);
+    margin-top: 10px;
+}
+
+.header-large{
+    font-size: var(--t1);
+    font-weight: var(--semi-bold);
+    margin-top: 15px;
+}
+
+.header-large span:nth-child(1){
+    font-size: var(--t2);
+    display: block;
+}
+
+.header-large span:nth-child(2){
+    color: var(--secondary);
+}
+
+.button{
+    line-height: 40px;
+    width: 250px;
+    font-weight: var(--medium);
+    font-size: var(--t7);
+    background-color: var(--bg);
+    color: var(--primary);
+    border: solid 2px var(--primary);
+    margin-top: 25px;
+    margin-left: 0;
+}
+
+.button:hover{
+    background-color: var(--primary);
+    color: var(--bg);
+    transition: .8s;
+}
+
+.hashtag{
+    padding: 0;
+    font-size: var(--t7);
+    font-weight: var(--regular);
+    transition: .5s;
+    position: fixed;
+    left: var(--gap-x);
+    bottom: var(--gap-y);
+}
+
+.hashtag span{
+    background-color: var(--bg);
+}
+
+.hashtag span:hover{
+    color: var(--primary);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.header-medium{
+    font-size: var(--t4);
+    font-weight: var(--semi-bold);
+}
+
+.header-small{
+    font-size: var(--t5);
+    color: var(--primary);
+    font-weight: var(--semi-bold);
+}
+
+.info-text{
+    font-size: var(--t7);
+    font-weight: var(--medium);
+    color: var(--secondary);
+    margin-top: 25px;
+}
+
+.info-text span{
+    color: var(--primary);
+}
+
+.info-text ul{
+    margin-top: 30px;
+}
+
+.info-text ul li{
+    font-size: var(--t6);
+}
+
+/* CUSTOM-SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

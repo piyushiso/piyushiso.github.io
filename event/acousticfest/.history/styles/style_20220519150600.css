@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100;400;500;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/choco-cookies');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@100&family=Poppins:wght@100;500;600;700&display=swap');
+
+:root {
+    --bg: #0E0F13;
+    --primary: #FAFCFD;
+    --secondary: #A0A2A6;
+    --main-font: 'Poppins', sans-serif;
+    --secondary-font: 'Cookie', sans-serif;
+    --bold: 700;
+    --semi-bold: 600;
+    --medium: 500; 
+    --regular: 400;
+    --t1: 64px;
+    --t2: 60px;
+    --t3: 38px;
+    --t4: 34px;
+    --t5: 30px;
+    --t6: 24px;
+    --t7: 20px;
+    --gap-x: 120px;
+    --gap-y: 60px;
+    --gap-sub: 30px;
+}
+
+body{
+    background: var(--bg);
+    color: var(--primary);
+    font-family: var(--main-font);
+    font-weight: var(--medium);
+    font-size: var(--t6);
+    letter-spacing: 2.5px;
+    background-image: url("../assets/images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right;
+    background-size: 30% 70%;
+}
+
+nav {
+    background: var(--bg) !important;
+    margin: var(--gap-y) var(--gap-x);
+}
+
+.navbar-dark, .bg-dark{
+    background: var(--bg) !important;
+    color: var(--primary);
+}
+
+.navbar-brand{
+    font-size: var(--t4);
+    color: var(--secondary);
+    font-weight: var(--semi-bold);
+}
+
+.nav-item a{
+    font-size: var(--t7);
+    font-weight: var(--regular);
+}
+
+.active{
+    font-weight: var(--bold) !important;
+}
+
+.navbar ul li{
+    padding-left: 50px;
+}
+
+.primary{
+    color: var(--primary);
+}
+
+.secondary{
+    color: var(--secondary);
+}
+
+.components{
+    padding: var(--gap-y) var(--gap-x);
+}
+
+.contents{
+    position: absolute;
+    top: 30%;
+    height: auto;
+}
+
+.college-name{
+    font-size: var(--t5);
+    font-weight: var(--semi-bold) !important;
+}
+
+.college-name span:nth-child(1){
+    display: block;
+}
+
+.sub-text{
+    font-family: var(--secondary-font);
+    font-size: var(--t3);
+    font-weight: var(--regular);
+    color: var(--secondary);
+}
+
+.header-large{
+    font-size: var(--t1);
+    font-weight: var(--semi-bold);
+}
+
+.header-large span:nth-child(1){
+    font-size: var(--t2);
+    display: block;
+}
+
+.header-large span:nth-child(2){
+    color: red;
+}
+
+.hashtag{
+    padding: inherit;
+    font-size: var(--t7);
+    font-weight: var(--regular);
+    transition: .5s;
+}
+
+.hashtag span:hover{
+    color: var(--primary);
+    transition: .5s;
+    cursor: pointer;
+}
