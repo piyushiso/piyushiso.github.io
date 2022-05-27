@@ -1,0 +1,17 @@
+body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body div{
+    background: red;
+    height: 500px;
+    width: 500px;
+    border: solid thin blue;
+    position: absolute;
+    bottom: -50%;
+    
+    text-align: center;
+    color: white;
+}

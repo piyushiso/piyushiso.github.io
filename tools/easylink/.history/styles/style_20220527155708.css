@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --font: 'Poppins', sans-serif;
+    --bold: 700;
+    --semi-bold: 600;
+    --medium: 500;
+    --regular: 400;
+    --light: 300;
+    --extra-light: 200;
+    --thin: 100;
+}
+
+body{
+    font-family: var(--font);
+    font-weight: var(--medium);
+}
+
+h1{
+    font-weight: var(--bold);
+}
+
+.blockquote{
+    font-weight: var(--extra-light);
+}
+
+.tab-content .blockquote{
+    /* font-weight: var(--light); */
+}

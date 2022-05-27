@@ -1,0 +1,13 @@
+$('form').on('submit', function(e){
+    e.preventDefault()
+})
+
+$('#break').on('click', function(e){
+    $('#breaklink').val($('#breaklink').val().split('').join(' '))
+    navigator.clipboard.writeText($('#breaklink').val());
+})
+
+$('#join').on('click', function(e){
+    $('#joinlink').val($('#breaklink').val().split('').join(' '))
+    navigator.clipboard.writeText($('#breaklink').val());
+})

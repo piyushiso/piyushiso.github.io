@@ -1,0 +1,14 @@
+body{
+    height: 100%;
+    width: 100%;
+    over
+}
+
+body div{
+    background: red;
+    height: 500px;
+    width: 500px;
+    border: solid thin blue;
+    position: absolute;
+    bottom: -30%;
+}

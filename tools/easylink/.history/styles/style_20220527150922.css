@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap');
+
+:root{
+    --font: 'Poppins', sans-serif;
+    --bold: 700;
+    --semi-bold: 600;
+    --medium: 500;
+    --regular: 400;
+}
+
+body{
+    font-family: var(--font);
+    font-weight: var(--medium);
+}
+
+.display-3{
+    font-weight: var(--bold);
+}
+
+.blockquote{
+    
+}

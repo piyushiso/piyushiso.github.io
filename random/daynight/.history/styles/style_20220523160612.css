@@ -1,0 +1,19 @@
+body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+body div{
+    background: red;
+    height: 500px;
+    width: 500px;
+    border: solid thin blue;
+    position: absolute;
+    bottom: 25;
+    text-align: center;
+    color: white;
+}
