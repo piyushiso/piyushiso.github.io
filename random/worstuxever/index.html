@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worst UX Ever - Demo</title>
+    <style>
+        body{
+            background: #F9F9F9;
+            color: #303030;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            right: 50%;
+            bottom: 50%;
+            transform: translate(50%,50%);
+            position: absolute;
+        }
+        .parent{
+            margin-top: 150px;
+        }
+        .header{
+            border-bottom: solid thin rgba(3, 3, 3, .1);
+            padding-bottom: 20px;
+        }
+        .container{
+            margin-top: auto;
+            display: flex;
+            width: 100%;
+        }
+        .form{
+            padding: 10px;
+            width: 100%;
+            /* border: dashed 5px rgba(3, 3, 3, .2); */
+        }
+        .form input{
+            width: 350px;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+        .form label{
+            text-align: left;
+        }
+        .btn{
+            margin-top: 5px;
+            background-color: #303030;
+            border-radius: 5px;
+            color: #F9F9F9;
+            padding: 10px;
+        }
+        .btn:hover{
+            background-color: #F9F9F9;
+            color: #303030;
+            transition: .5s;
+        }
+        #final-message{
+            font-size: 16px;
+            color: rgba(3, 3, 3, .5);
+            margin: 5px;
+            /* display: none; */
+        }
+    </style>
+</head>
+<body onload="onLoad()">
+    <div class="parent">
+        <div class="header">
+            <h3>Admission Form</h3>
+            <label id="final-message">Please enter your details.</label>
+        </div>
+        <div class="container">
+            <div class="form">
+                <div id="sec-0">
+                    <!-- <label>Name</label> -->
+                    <br>
+                    <input id="sec-0t" type="text" placeholder="Name"/>
+                </div>
+                <div id="sec-1">
+                    <!-- <label>Class</label> -->
+                    <br>
+                    <input id="sec-1t" type="text" placeholder="Program"/>
+                </div>
+                <div id="sec-2">
+                    <!-- <label>Phone</label> -->
+                    <br>
+                    <input id="sec-2t" type="text" placeholder="Phone"/>
+                </div>
+                <div id="sec-3">     
+                    <!-- <label>Address</label> -->
+                    <br>
+                    <input id="sec-3t" type="text" placeholder="Address"/>
+                </div></br>
+                <input class="btn" id="submit-button" type="button" value="Submit" onclick="addOption()"/>
+                </br>
+                <input class="btn" id="retry-button" type="button" value="Retry" onclick="reload()"/>
+            </div>
+        </div>
+    </div>
+    <script>
+        const identifier = "sec-", message = "final-message", submitbtn = "submit-button", retrybtn = "retry-button"
+        var index = 0, max = 4, iteration = 0, blockall = false
+        function onLoad(){
+            clearAll();
+            if(blockall){
+                document.getElementById(submitbtn).style.display = "none";
+                document.getElementById(retrybtn).style.display = "inline";
+            }
+            for(i = blockall?0:1; i < max ; i++){    
+                document.getElementById(identifier+i).style.display = "none"
+            }
+        }
+        function clearAll(){
+            for(i = index; i < max ; i++){
+                document.getElementById(identifier+i+"t").value = ""
+            }
+            document.getElementById(retrybtn).style.display = "none"    
+        }
+        function addOption(){
+            if(++index >= max){
+                if(iteration++ == 0){
+                    index = 0
+                    onLoad()
+                    document.getElementById(message).innerHTML = "Enter details again for confirmation." 
+                    // document.getElementById(message).style.display = "block"
+                }else{
+                    document.getElementById(message).innerHTML = "Sorry, could not process your request currently. Please retry." 
+                    blockall = true
+                    onLoad();
+                }
+            } document.getElementById(identifier+index).style.display = "block"
+        }
+        function reload(){
+            location.reload();
+        }
+    </script>
+</body>
+</html>
