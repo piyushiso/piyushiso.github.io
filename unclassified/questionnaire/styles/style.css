@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@400&display=swap');
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    overflow: hidden;
+    background-color: #303030;
+    height: 100%;
+    width: 100%;
+    color: #FEFEFE;
+    font-size: 20px;
+}
+.contents{
+    border: 1px solid rgba(255, 255, 255, .2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+}
+.h1{
+    font-size: 64px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.hr-low{
+    border: 1px solid rgba(255, 255, 255, .2);
+}
+.btn{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: slateblue;
+    color: #FEFEFE;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+#btn-upload{    
+    background-color: lightseagreen;
+}
+#btn-load{
+    background-color: royalblue;
+}
+.btn:hover, #btn-load:hover, #btn-upload:hover{
+    background-color: coral;
+    transition: .5s;
+}
+#segment-1, #segment-2{
+    display: none;
+}
+.selectors select{
+    padding: 5px;
+    margin: 10px 0 10px 0;
+    background-color: azure;
+    
+}
+.inputs input{
+    width: 100%;
+    padding: 5px;
+}

@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Questionnaire</title>
+</head>
+<body onload="onload()">
+    <div class="contents">
+        <div id="segment-0">
+            <span class="h1">Load</span>
+            <hr class="hr-low">
+            <div>
+                <span class="selectors">
+                    <select>
+                        <option>Class</option>
+                        <option>BIM</option>
+                    </select> |
+                    <select>
+                        <option>Subject</option>
+                        <option>C Programming</option>
+                    </select> | 
+                    <select>
+                        <option>Type</option>
+                        <option>Brief Answer Questions</option>
+                    </select> | 
+                    <select>
+                        <option>Difficulty</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                    </select>
+                </span>
+            </div>
+            <button class="btn" onclick="displayAll()">Display All</button>
+            <button class="btn" onclick="displayRandom()">Display Random</button>
+        </div>
+        <div id="segment-1">
+            <div id="segment-1-questions">
+
+            </div>
+            <button class="btn" onclick="printSegment()">Download</button>
+        </div>
+    </div>
+    <script src="scripts/script-v2.js"></script>
+</body>
+</html>
