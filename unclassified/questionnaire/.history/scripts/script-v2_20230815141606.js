@@ -42,7 +42,7 @@ function displayRandom(){
     
     for(i=0;i<5;i++){
         j = Math.floor(Math.random() * --len+1)
-        text += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h5>"+(i+1)+". "+temp[j]+"</h5>"
+        text += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4>"+(i+1)+". "+temp[j]+"</h5>"
         temp.splice(j , 1)
     }
     document.write(text)

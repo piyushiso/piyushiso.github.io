@@ -38,11 +38,11 @@ function displayAll(){
 function displayRandom(){
     temp = questions
     len = temp.length
-    text = "&nbsp;&nbsp;&nbsp;<h1>SCHOOL NAME</h1><br><hr><h3>Brief Answer Questions</h3>"
+    text = ""
     
     for(i=0;i<5;i++){
         j = Math.floor(Math.random() * --len+1)
-        text += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h5>"+(i+1)+". "+temp[j]+"</h5>"
+        text += (i+1)+". "+temp[j]+"<br>"
         temp.splice(j , 1)
     }
     document.write(text)
