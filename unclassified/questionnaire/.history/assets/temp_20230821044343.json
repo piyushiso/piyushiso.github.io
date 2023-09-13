@@ -1,0 +1,62 @@
+[
+    {
+        "class": 10,
+        "subjects": [
+            {
+                "subject": "Sceince",
+                "chapters": [
+                    {
+                        "chapter": "Force",
+                        "question-types": [
+                            {
+                                "question-type": "Brief Answer Questions",
+                                "marks": 1,
+                                "question-categories": [
+                                    {
+                                        "question-category": "Category A",
+                                        "difficulty-levels":[
+                                            {
+                                                "difficulty-level": "Basic",
+                                                "questions": [
+                                                    {
+                                                        "text": "Sci-BAQ-A-Basic-0",
+                                                        "image": null
+                                                    },
+                                                    {
+                                                        "text": "Sci-BAQ-A-Basic-1",
+                                                        "image": null
+                                                    },
+                                                    {
+                                                        "text": "Sci-BAQ-A-Basic-2",
+                                                        "image": null
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "difficulty-level": "Standard",
+                                                "questions": [
+                                                    {
+                                                        "text": "Sci-BAQ-A-Standard-0",
+                                                        "image": null
+                                                    },
+                                                    {
+                                                        "text": "Sci-BAQ-A-Standard-1",
+                                                        "image": null
+                                                    },
+                                                    {
+                                                        "text": "Sci-BAQ-B-2",
+                                                        "image": null
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "class": 10,
+        "subjects": [
+            {
+                "subject": "Sceince",
+                "chapters": [
+                    {
+                        "chapter": "Force",
+                        "question-types": [
+                            {
+                                "question-type": "Brief Answer Questions",
+                                "marks": 1,
+                                "question-categories": [
+                                    {
+                                        "question-category": "Category A",
+                                        "difficulty-levels":[
+                                            {
+                                                "difficulty-level": "A",
+                                                "questions": [
+                                                    {
+                                                        "text": "Sci-BAQ-A-0",
+                                                        "image": null
+                                                    },
+                                                    {
+                                                        "text": "Sci-BAQ-A-1",
+                                                        "image": null
+                                                    },
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

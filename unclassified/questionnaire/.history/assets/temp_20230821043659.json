@@ -1,0 +1,31 @@
+[
+    {
+        "class": 10,
+        "subjects": [
+            {
+                "subject": "Sceince",
+                "chapters": [
+                    {
+                        "chapter": "Force",
+                        "question-types": [
+                            {
+                                "question-type": "Brief Answer Questions",
+                                "marks": 1,
+                                "question-categories": [
+                                    {
+                                        "question-category": "Category A",
+                                        "difficulty-levels":[
+                                            {
+                                                "difficulty"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
