@@ -1,1 +1,0 @@
-const workout = require("../models/")
