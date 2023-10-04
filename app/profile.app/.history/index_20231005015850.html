@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="bg-light">
+        <div id="container" class="container">
+            <div id="profile-0" class="row">
+                <div class="col-lg-12 mb-4 mb-sm-5">
+                    <div class="card card-style1 border-0">
+                        <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 mb-4 mb-lg-0">
+                                    <img id="var-img" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="...">
+                                    <!-- <img id="var-img" src="https://drive.google.com/uc?export=view&id=1rPSI-03cMJ601m098Nncecm2mBOY2oPr" height="500px" alt="N/A"> -->
+                                </div>
+                                <div class="col-lg-6 px-xl-10">
+                                    <div class="bg-secondary d-lg-inline-block py-1-9 px-1-9 px-sm-6 mb-1-9 rounded">
+                                        <h3 id="var-name" class="h2 text-white mb-0">PROFILE NAME</h3>
+                                    </div>
+                                    <ul class="list-unstyled mb-1-9">
+                                        <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">SN: <span id="var-sn" class="text-primary">#0</span></span> </li>
+                                        <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">PROGRAM: <span id="var-program" class="text-primary">N/A</span></span></li>
+                                        <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">GPA (GRADE 12): <span id="var-gpa" class="text-primary">N/A</span></span></li>
+                                        <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">CMAT ROLL NO: <span id="var-roll" class="text-primary">N/A</span></span></li>
+                                        <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">CMAT SCORE: <span id="var-score" class="text-primary">N/A</span></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 mb-4 mb-sm-5">
+                    <div>
+                        <span class="section-title text-primary mb-3 mb-sm-4">KEYNOTES</span>
+                        <p id="var-knotes">N/A.</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 mb-4 mb-sm-5">
+                    <div>
+                        <span class="section-title text-primary mb-3 mb-sm-4">ACADEMIC INSTRUCTOR'S REMARKS</span>
+                        <p id="var-air">N/A.</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 mb-4 mb-sm-5">
+                    <div>
+                        <span class="section-title text-primary mb-3 mb-sm-4">SESSION INSTRUCTOR'S REMARKS</span>
+                        <p id="var-sir">N/A.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var profileObj = document.getElementById("profile-0")
+        var containerObj = document.getElementById("container")
+        var count = 15
+        var payload = [
+            {'sn' : '1', 'roll' : 'HSMSS-0023', 'name' : 'AAYUSHA KHADKI', 'img' : 'https://drive.google.com/open?id=1rPSI-03cMJ601m098Nncecm2mBOY2oPr', 'program' : 'BIM', 'gpa' : '2.81', 'score' : '69', 'knotes' : 'ABSENT IN CLASS.', 'air' : 'N/A', 'sir' : 'N/A'} , {'sn' : '2', 'roll' : 'HSMSS-0003', 'name' : 'ABHISHEK KUMAR KESARI', 'img' : 'https://drive.google.com/open?id=19McjIVOrPFOXfsfwdcgxb0al5VJCnH_g', 'program' : 'BIM', 'gpa' : '3.07', 'score' : '75', 'knotes' : 'N/A', 'air' : 'REGULAR AND AVERAGE ', 'sir' : 'ATTENTIVE. ENGAGING. COMPLETES ASSIGNED TASKS.'} , {'sn' : '3', 'roll' : 'HSMSS-0016', 'name' : 'ABISKAR GHIMIRE', 'img' : 'https://drive.google.com/open?id=1DeVekJg3HR1nrDAs19r2VQWLyzZ-PJ9K', 'program' : 'BIM', 'gpa' : '3.03', 'score' : '66', 'knotes' : 'N/A', 'air' : 'IRREGULAR, GOOD', 'sir' : 'N/A'} , {'sn' : '4', 'roll' : 'HSMSS-0031', 'name' : 'ANJALI PARIYAR', 'img' : 'https://drive.google.com/open?id=1kGi65wqVgBy59YOwHEMQvh5gZ6eI4ZoU', 'program' : 'BIM', 'gpa' : '2.75', 'score' : '79', 'knotes' : 'PRESENT FOR FEW DAYS ONLY.', 'air' : 'AVERAGE ', 'sir' : 'N/A'} , {'sn' : '5', 'roll' : 'HSMSS-0002', 'name' : 'ANSHU KUNWAR', 'img' : 'https://drive.google.com/open?id=1E7PF0bqG33_QpawX1tkaY49lItDtltkC', 'program' : 'BIM', 'gpa' : '3.01', 'score' : '71', 'knotes' : 'N/A', 'air' : 'AVERAGE ', 'sir' : 'N/A'} , {'sn' : '6', 'roll' : 'MMCH-0055', 'name' : 'ANUP POKHREL', 'img' : 'https://drive.google.com/open?id=1fsqp6MByEdaDZ4pn6V5N4HjNjFMvXcIN', 'program' : 'BIM', 'gpa' : '3.58 (A)', 'score' : '76', 'knotes' : 'ABSENT IN CLASS.', 'air' : 'N/A IF NOT AVAILABLE.', 'sir' : 'N/A'} , {'sn' : '7', 'roll' : 'HSMSS-0012', 'name' : 'BISHAKA BHATTARAI', 'img' : '', 'program' : 'BIM', 'gpa' : '2.8', 'score' : '', 'knotes' : 'ABSENT IN CLASS.', 'air' : 'N/A IF NOT AVAILABLE.', 'sir' : 'N/A'} , {'sn' : '8', 'roll' : 'HSMSS-0017', 'name' : 'BISHESH SHRESTHA', 'img' : 'https://drive.google.com/open?id=1D9_KGA5yIvggaA973Pd7Fl6byQrEgy_L', 'program' : 'BIM', 'gpa' : '3.31 (A)', 'score' : '74', 'knotes' : 'N/A', 'air' : 'GOOD ', 'sir' : 'N/A'} , {'sn' : '9', 'roll' : 'HSMSS-0011', 'name' : 'HITEN MANADHAR', 'img' : 'https://drive.google.com/open?id=1feTV_ADPv1lkXeEeT_4sAkT-FcjNgTl-', 'program' : 'BIM', 'gpa' : '2', 'score' : '63', 'knotes' : 'N/A', 'air' : 'AVERAGE ', 'sir' : 'N/A'} , {'sn' : '10', 'roll' : 'HSMSS-0020', 'name' : 'JESHIKA PAUDEL', 'img' : 'https://drive.google.com/open?id=1uWymMx4Vkp_LZUMtOesU6ZVWT2Y_mBHd', 'program' : 'BIM', 'gpa' : '3.48 (A)', 'score' : '71', 'knotes' : 'N/A', 'air' : 'AVERAGE ', 'sir' : 'N/A'} , {'sn' : '11', 'roll' : 'HSMSS-0028', 'name' : 'KRIPA SHRESTHA', 'img' : '', 'program' : 'BIM', 'gpa' : '2.91', 'score' : '', 'knotes' : 'ABSENT IN CLASS.', 'air' : 'N/A IF NOT AVAILABLE.', 'sir' : 'N/A'} , {'sn' : '12', 'roll' : 'HSMSS-0026', 'name' : 'LINA KARN', 'img' : 'https://drive.google.com/open?id=1Fv9x87VZaFOSCFxxEg_iBuA5DlLX0XZU', 'program' : 'BIM', 'gpa' : '2.5', 'score' : '77', 'knotes' : 'N/A', 'air' : 'BETTER ', 'sir' : 'ATTENTIVE, NOT TECH FRIENDLY, HAS LEARNINIG ATTITUDE.'} , {'sn' : '13', 'roll' : 'HSMSS-0027', 'name' : 'MUSKAN DAS', 'img' : 'https://drive.google.com/open?id=1FxTgu_LIkE-ns7OPrhiNGmf0IYrGQjYJ', 'program' : 'BIM', 'gpa' : '3.35 (A)', 'score' : '68', 'knotes' : 'N/A', 'air' : 'BETTER ', 'sir' : 'ATTENTIVE.'} , {'sn' : '14', 'roll' : 'HSMSS-0025', 'name' : 'MUSKAN TAMANG', 'img' : 'https://drive.google.com/open?id=1I5fgsivujUVlTdAs_TJKNJHJW15vJRHh', 'program' : 'BIM', 'gpa' : '3.18', 'score' : '71', 'knotes' : 'N/A', 'air' : 'GOOD ', 'sir' : 'HESITANT TO SPEAK.'} , {'sn' : '15', 'roll' : 'HSMSS-0008', 'name' : 'NISCHAL MASKEY', 'img' : 'https://drive.google.com/open?id=18xLpG-bQXUFIiv1DottVo9udjBY5xL33', 'program' : 'BIM', 'gpa' : '3.35 (A)', 'score' : '70', 'knotes' : 'N/A', 'air' : 'BETTER ', 'sir' : 'ATTENTIVE. COMPLETES ASSIGNED TASKS. DOES NOT ENGAGE MUCH.'} , {'sn' : '16', 'roll' : 'HSMSS-0005', 'name' : 'PINKU KUMARI SAH', 'img' : 'https://drive.google.com/open?id=1WZHXYhJ_fVnZHwteQ_2gJxiz0PsbGlfu', 'program' : 'BIM', 'gpa' : '3.21 (A)', 'score' : '66', 'knotes' : 'N/A', 'air' : 'GOOD ', 'sir' : 'N/A'} , {'sn' : '17', 'roll' : 'HSMSS-0013', 'name' : 'PRASHANT PAUDEL', 'img' : '', 'program' : 'BIM', 'gpa' : '3.56 (A)', 'score' : '', 'knotes' : 'N/A', 'air' : 'N/A', 'sir' : 'N/A'} , {'sn' : '18', 'roll' : 'HSMSS-0014', 'name' : 'PRERANA TIMALSINA', 'img' : 'https://drive.google.com/open?id=1K6syxlWiWcMe-1T6N6kW78c-JkjmOOWR', 'program' : 'BIM', 'gpa' : '3.22 (A)', 'score' : '67', 'knotes' : 'ALSO PLANNING FOR ABROAD.', 'air' : 'AVERAGE ', 'sir' : 'N/A'} , {'sn' : '19', 'roll' : 'HSMSS-0009', 'name' : 'PUJA GURUWARCHARYA', 'img' : '', 'program' : 'BIM', 'gpa' : '2.58', 'score' : '', 'knotes' : 'N/A', 'air' : 'N/A', 'sir' : 'ATTENTIVE. ENGAGING. LEARNING ATTITUDE. SOMETIMES '} , {'sn' : '20', 'roll' : 'HSMSS-0022', 'name' : 'RACHANA NEPAL', 'img' : 'https://drive.google.com/open?id=1aQWumu91CQw8EAnoZqA1bOv8DoemmyZm', 'program' : 'BIM', 'gpa' : '3.38 (A)', 'score' : '70', 'knotes' : 'N/A', 'air' : 'GOOD ', 'sir' : 'N/A'} , {'sn' : '21', 'roll' : 'HSMSS-0004', 'name' : 'RISHIKA DULAL', 'img' : 'https://drive.google.com/open?id=1WN6kBLnmSVeSUpHhQ7n8UwG8x5Lu16Gn', 'program' : 'BIM', 'gpa' : '2.5', 'score' : '74', 'knotes' : 'N/A', 'air' : 'BETTER ', 'sir' : 'ATTENTIVE. ENGAGING. COMPLETES ASSIGNED TASKS.'} , {'sn' : '22', 'roll' : 'HSMSS-0019', 'name' : 'RIYA ADHIKARI', 'img' : 'https://drive.google.com/open?id=10wCQwMffDygcjs-CWaUxd_xdUizURB0O', 'program' : 'BIM', 'gpa' : '3.15', 'score' : '66', 'knotes' : 'N/A', 'air' : 'BETTER ', 'sir' : 'N/A'} , {'sn' : '23', 'roll' : 'HSMSS-0029', 'name' : 'SANDHYA GUPTA', 'img' : 'https://drive.google.com/open?id=18r4ck5MNaDpGl-9YJulRVaEkABAZiUha', 'program' : 'BIM', 'gpa' : '3.22 (A)', 'score' : '64', 'knotes' : 'N/A', 'air' : 'BETTER ', 'sir' : 'N/A'} , {'sn' : '24', 'roll' : 'HSMSS-0030', 'name' : 'SANZEET KUMAR DAS', 'img' : 'https://drive.google.com/open?id=1ekMLkoKvgAdVUkeQahUZkBM3VIkSnVQ4', 'program' : 'BIM', 'gpa' : '2.95', 'score' : '77', 'knotes' : 'ABSENT IN CLASS.', 'air' : 'N/A IF NOT AVAILABLE.', 'sir' : 'N/A'} , {'sn' : '25', 'roll' : 'HSMSS-0006', 'name' : 'SHRISTI LAMA BOMJAN', 'img' : 'https://drive.google.com/open?id=14_3eJkozcbim53GLhvzaPgF32KGF-ArB', 'program' : 'BIM', 'gpa' : '-', 'score' : '67', 'knotes' : 'N/A', 'air' : 'BETTER ', 'sir' : 'ATTENTIVE. ENGAGING. COMPLETES ASSIGNED TASKS. GREAT LEARNING ATTITUDE.'} , {'sn' : '26', 'roll' : 'HSMSS-0010', 'name' : 'SNEHA BISHOKARMA', 'img' : '', 'program' : 'BIM', 'gpa' : '2.61', 'score' : '', 'knotes' : 'ABSENT IN CLASS + AIRHOSTESS EXAM.', 'air' : 'N/A IF NOT AVAILABLE.', 'sir' : 'N/A'} , {'sn' : '27', 'roll' : 'HSMSS-0001', 'name' : 'SNEHA KUNWAR', 'img' : 'https://drive.google.com/open?id=1Qq0GZRCXMYr5F-E-hz8DTyPcQVtD8hy8', 'program' : 'BIM', 'gpa' : '3.17', 'score' : '69', 'knotes' : 'N/A', 'air' : 'GOOD ', 'sir' : 'N/A'} , {'sn' : '28', 'roll' : 'HSMSS-0018', 'name' : 'SUJAL SHRESTHA', 'img' : '', 'program' : 'BIM', 'gpa' : '2.7', 'score' : '', 'knotes' : 'N/A', 'air' : 'GOOD ', 'sir' : 'N/A'} , {'sn' : '29', 'roll' : 'HSMSS-0015', 'name' : 'SURYAKANT SAH', 'img' : '', 'program' : 'BIM', 'gpa' : '2.68', 'score' : '', 'knotes' : 'N/A', 'air' : 'GOOD ', 'sir' : 'N/A'} , {'sn' : '30', 'roll' : '', 'name' : 'SUSHILA ADHIKARI', 'img' : 'https://drive.google.com/open?id=16uuQ_9szgIp_6zgbqkvpbgd5A3oO_GaZ', 'program' : 'BIM', 'gpa' : '2.82', 'score' : '68', 'knotes' : 'N/A', 'air' : 'N/A', 'sir' : 'N/A'}
+        ]
+        function addProfile(obj, data){
+            obj.innerHTML = profileObj.innerHTML
+            src = data.img
+            obj.querySelector("#var-img").src = "https://drive.google.com/uc?export=view&id="+src.split("https://drive.google.com/open?id=")[1]
+            obj.querySelector("#var-name").innerHTML = data.name
+            obj.querySelector("#var-sn").innerHTML = "#"+data.sn
+            obj.querySelector("#var-program").innerHTML = data.program
+            obj.querySelector("#var-gpa").innerHTML = data.gpa
+            obj.querySelector("#var-roll").innerHTML = data.roll
+            obj.querySelector("#var-score").innerHTML = data.score
+            obj.querySelector("#var-knotes").innerHTML = "BIM"
+            obj.querySelector("#var-air").innerHTML = "BIM"
+            obj.querySelector("#var-sir").innerHTML = "HEYYYYYY"
+            containerObj.innerHTML += obj.outerHTML
+        }
+        for(i=1;i<=count;i++){
+            var temp = document.createElement("div")
+            var profileName = "profile-"+i
+            temp.innerHTML = "<div id='"+profileName+"' class='row'></div>"
+            addProfile(temp, payload[i-1])    
+        }
+    </script>
+</body>
+</html>
