@@ -1,0 +1,21 @@
+Name,Age,City,Salary
+Alice,24.0,New York,70000.0
+Bob,30.0,Los Angeles,80000.0
+Charlie,,Chicago,60000.0
+David,35.0,Houston,
+Eve,28.0,Phoenix,90000.0
+Frank,40.0,Philadelphia,50000.0
+Grace,,San Antonio,
+Heidi,50.0,San Diego,120000.0
+Ivan,29.0,Dallas,75000.0
+Judy,,San Jose,
+Karl,27.0,Austin,62000.0
+Laura,36.0,Jacksonville,68000.0
+Mallory,33.0,Fort Worth,78000.0
+Nina,31.0,Columbus,71000.0
+Oscar,,Charlotte,
+Peggy,45.0,Indianapolis,97000.0
+Quinn,37.0,Seattle,85000.0
+Rob,22.0,Denver,65000.0
+Sybil,,Washington,
+Trent,34.0,Boston,77000.0
