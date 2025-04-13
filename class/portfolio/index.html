@@ -1,0 +1,323 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- IMPORTING CUSTOM STYLES. -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- ICON. -->
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIG4RZLQCCvYzUOzCLUpTWsSgLYhZJwhfxbw&s" />
+    <title>Ram | Profile</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <!-- NAV CONTENTS -->
+        <section class="nav-contents">
+            <!-- NAV TITLE -->
+            <div class="nav-title" onclick="location.reload()">
+                &lt;RAM/&gt;
+            </div>
+            <!-- NAV ITEMS -->
+            <div class="nav-items" id="nav-items">
+                <a href="#about">ABOUT</a>
+                <a href="#experience">EXPERIENCE</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#awards">AWARDS & CERTIFICATIONS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+            <!-- HAMBURGER ICON -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+    </nav>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <!-- ABOUT CONTENTS -->
+        <section class="about-contents">
+            <!-- TEXTUAL DETAILS -->
+            <article class="about-description">
+                <h1>RAM LAL SUBEDI</h1>
+                <h3>BIM | WEB | UI/UX</h3>
+                <p>
+                    A web developer passionate about creating user-friendly web experiences.
+                <blockquote><strong>Skills:</strong> HTML, CSS, JS, Figma, UI/UX, Responsive Design, Web Frameworks,
+                    Collaboration.</blockquote>
+                </p>
+            </article>
+            <!-- IMAGE -->
+            <div class="about-image"></div>
+        </section>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <!-- EXPERIENCE CONTENTS -->
+        <section class="experience-contents">
+            <section id="contents-left">
+                <h2 class="contents-title">EXPERIENCE</h2>
+                <section class="experience-items">
+                    <!-- EXPEIRENCE #1 (SET IN DECENDING ORDER) -->
+                    <div id="exp-1" class="active" onclick="showExp('exp-1-content')">
+                        <h3>ABC Tech</h3>
+                        <p>Intern | 2025 - Ongoing</p>
+                    </div>
+                    <!-- EXPEIRENCE #2 -->
+                    <div id="exp-2" onclick="showExp('exp-2-content')">
+                        <h3>Hackathon HSMSS</h3>
+                        <p>First Runner-up | 2024</p>
+                    </div>
+                    <!-- EXPEIRENCE #3 -->
+                    <div id="exp-3" onclick="showExp('exp-3-content')">
+                        <h3>IT Club of HSMSS</h3>
+                        <p>Graphics Designer | 2023 - 2024</p>
+                    </div>
+                    <!-- ADDITIONAL EXPERIENCES THAT WILL BE DISPLAYED WHILE SCROLLING VERTICALLY. -->
+                    <div id="exp-4" onclick="showExp('exp-4-content')">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem Ipsum | 202X - 202X</p>
+                    </div>
+                    <div id="exp-5" onclick="showExp('exp-5-content')">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem Ipsum | 202X - Ongoing</p>
+                    </div>
+                </section>
+            </section>
+            <section id="exp-contents-right">
+                <!-- RESPECTIVE CONTENT OF EXPERIENCE #1 -->
+                <div id="exp-1-content">
+                    <h2>ABC Tech</h2>
+                    <i>Intern | 2025 - Ongoing</i>
+                    <hr />
+                    <p>
+                        Serving as an intern looking over Frontend projects using HTML, CSS & JS.
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF EXPERIENCE #2 -->
+                <div id="exp-2-content" style="display: none;">
+                    <h2>Hackathon HSMSS</h2>
+                    <i>First Runner-up | 2024</i>
+                    <hr />
+                    <p>
+                        Developed an interactive solution for a smart college problem with team.
+                        <a href="#">Project</a>
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF EXPERIENCE #3 -->
+                <div id="exp-3-content" style="display: none;">
+                    <h2>IT Club of HSMSS</h2>
+                    <i>Graphics Designer | 2023 - 2024</i>
+                    <hr />
+                    <p>
+                        Served as a graphics designer to create vibrant presence in social media.
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF EXPERIENCE #4 -->
+                <div id="exp-4-content" style="display: none;">
+                    <h2>Lorem Ipsum</h2>
+                    <i>Lorem Ipsum | 202X - 202X</i>
+                    <hr />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus nibh, rutrum sit amet dui
+                        nec, mattis tempor nunc.
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF EXPERIENCE #5 -->
+                <div id="exp-5-content" style="display: none;">
+                    <h2>Lorem Ipsum</h2>
+                    <i>Lorem Ipsum | 202X - Ongoing</i>
+                    <hr />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus nibh, rutrum sit amet dui
+                        nec, mattis tempor nunc.
+                    </p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <!-- PROJECTS CONTENTS. -->
+        <section class="projects-contents">
+            <h2 class="contents-title">PROJECTS</h2>
+            <section class="project-items">
+                <!-- PROJECT #1: SMS -->
+                <div id="project-1">
+                    <h2>SMS</h2>
+                    <blockquote>HTML, CSS, JS | 2024</blockquote>
+                    <p>
+                        A web based Student Management System (SMS) that performs basic CRUD operation.
+                    </p>
+                    <p><a href="#">Link</a></p>
+                </div>
+                <!-- PROJECT #2: LOREM IPSUM 1 -->
+                <div id="project-2">
+                    <h2>Lorem Ipsum 1</h2>
+                    <blockquote>Lorem Ipsum | 2024</blockquote>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus nibh, rutrum sit amet dui
+                        nec, mattis tempor nunc.
+                    </p>
+                    <p><a href="#">Link</a></p>
+                </div>
+                <!-- PROJECT #3: GroceryHall -->
+                <div id="project-3">
+                    <h2>GroceryHall</h2>
+                    <blockquote>Figma | 2024</blockquote>
+                    <p>
+                        Designed a Figma prototype for GroceryHall, an online grocery system.
+                    </p>
+                    <p><a href="#">Link</a></p>
+                </div>
+                <!-- ADDITIONAL PROJECTS THAT WILL BE DISPLAYED WHILE SCROLLING HORIZONTALLY. -->
+                <div id="project-4">
+                    <h2>Lorem Ipsum 2</h2>
+                    <blockquote>Lorem Ipsum | 2024</blockquote>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus nibh, rutrum sit amet dui
+                        nec, mattis tempor nunc.
+                    </p>
+                    <p><a href="#">Link</a></p>
+                </div>
+                <div id="project-5">
+                    <h2>Lorem Ipsum 3</h2>
+                    <blockquote>Lorem Ipsum | 2024</blockquote>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus nibh, rutrum sit amet dui
+                        nec, mattis tempor nunc.
+                    </p>
+                    <p><a href="#">Link</a></p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- AWARDS & CERTIFICATIONS -->
+    <section id="awards">
+        <!-- AWARDS CONTENTS -->
+        <section class="awards-contents">
+            <section id="contents-left">
+                <h2 class="contents-title">AWARDS & CERTIFICATIONS</h2>
+                <section class="awards-items">
+                    <!-- AWARDS #1 (SET IN DECENDING ORDER) -->
+                    <div id="awards-1" class="active" onclick="showAwards('awards-1-content')">
+                        <h3>UI/UX Workshop</h3>
+                        <p>HSMSS | 2024</p>
+                    </div>
+                    <!-- AWARDS #2 -->
+                    <div id="awards-2" onclick="showAwards('awards-2-content')">
+                        <h3>Lorem Ipsum #2</h3>
+                        <p>Lorem Ipsum | 20XX</p>
+                    </div>
+                    <!-- AWARDS #3 -->
+                    <div id="awards-3" onclick="showAwards('awards-3-content')">
+                        <h3>Lorem Ipsum #3</h3>
+                        <p>Lorem Ipsum | 20XX</p>
+                    </div>
+                    <!-- ADDITIONAL AWARDS THAT WILL BE DISPLAYED WHILE SCROLLING VERTICALLY. -->
+                    <div id="awards-4" onclick="showAwards('awards-4-content')">
+                        <h3>Lorem Ipsum #4</h3>
+                        <p>Lorem Ipsum | 20XX</p>
+                    </div>
+                    <div id="awards-5" onclick="showAwards('awards-5-content')">
+                        <h3>Lorem Ipsum #5</h3>
+                        <p>Lorem Ipsum | 20XX</p>
+                    </div>
+                </section>
+            </section>
+            <section id="awards-contents-right">
+                <!-- RESPECTIVE CONTENT OF AWARDS #1 -->
+                <div id="awards-1-content">
+                    <h2>UI/UX Workshop</h2>
+                    <i>HSMSS | 2024</i>
+                    <hr />
+                    <p>
+                        Received a certificate upon completing the 10 days UI/UX course on HSMSS.
+                        <a href="#">Certificate</a>
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF AWARDS #2 -->
+                <div id="awards-2-content" style="display: none;">
+                    <h2>Lorem Ipsum #2</h2>
+                    <i>Lorem Ipsum | 20XX</i>
+                    <hr />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus nibh, rutrum sit amet dui
+                        nec, mattis tempor nunc.
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF AWARDS #3 -->
+                <div id="awards-3-content" style="display: none;">
+                    <h2>Lorem Ipsum #3</h2>
+                    <i>Lorem Ipsum | 20XX</i>
+                    <hr />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus nibh, rutrum sit amet dui
+                        nec, mattis tempor nunc.
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF AWARDS #4 -->
+                <div id="awards-4-content" style="display: none;">
+                    <h2>Lorem Ipsum #4</h2>
+                    <i>Lorem Ipsum | 20XX</i>
+                    <hr />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus nibh, rutrum sit amet dui
+                        nec, mattis tempor nunc.
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF AWARDS #5 -->
+                <div id="awards-5-content" style="display: none;">
+                    <h2>Lorem Ipsum #5</h2>
+                    <i>Lorem Ipsum | 20XX</i>
+                    <hr />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus nibh, rutrum sit amet dui
+                        nec, mattis tempor nunc.
+                    </p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- FOOTER/CONTACT -->
+    <footer id="contact">
+        <!-- FOOTER/CONTACT CONTENTS -->
+        <section class="contact-contents">
+            <!-- FOOTER/CONTACT LINKS -->
+            <div class="contact-links">
+                <h3>LINKS</h3>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#awards">Awards & Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <!-- FOOTER/CONTACT CONNECT -->
+            <div class="contact-connect">
+                <h3>CONNECT</h3>
+                <a href="#">Github</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <!-- FOOTER/CONTACT CONTACT -->
+            <div>
+                <h3>CONTACT</h3>
+                <a href="mailto:ram@gmail.com">Email Me</a>
+            </div>
+        </section>
+    </footer>
+
+    <!-- IMPORTING CUSTOM SCRIPT. -->
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
