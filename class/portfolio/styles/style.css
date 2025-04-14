@@ -10,6 +10,11 @@
     --h3: 20px;
     --nm: 16px;
 
+    ---h1-mob: 28px;
+    ---h2-mob: 20px;
+    ---h3-mob: 16px;
+    --nm-mob: 14px;
+
     /* COLORS. */
     --primary: tomato;
     --secondary: #49C5B6;
@@ -130,22 +135,23 @@ body {
         padding-right: calc(var(--p-x)/2);
         width: 600px;
         max-width: 600px;
+        min-width: 200px;
 
         & h1 {
             font-size: var(--h1);
-            padding-bottom: 30px;
+            margin-bottom: 30px;
         }
 
         & h3 {
             font-size: var(--h3);
-            padding-bottom: 20px;
+            margin-bottom: 20px;
             color: var(--gray);
         }
 
         & p,
         blockquote {
             line-height: 30px;
-            padding-bottom: 10px;
+            margin-bottom: 10px;
         }
 
         & blockquote {
@@ -209,7 +215,6 @@ body {
         width: 500px;
         max-width: 500px;
         overflow-y: scroll;
-        /* gap: 1rem; */
 
         div {
             padding: 20px 15px;
@@ -441,8 +446,39 @@ body {
 
     #about .about-contents {
         flex-direction: column-reverse;
-        justify-content: left;
+        justify-content: center;
         gap: 2rem;
+    }
+    .about-description{
+        /* padding: var(--p-y-mob) var(--p-x-mob); */
+        /* background-color: red; */
+        width: fit-content;
+        max-width: 500px;
+        min-width: 200px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
+        & h1{
+            font-size: var(---h1-mob);
+            margin: 0;
+            padding: 0;
+            padding-left: 30px;
+        }
+
+        & h3{
+            font-size: var(---h3-mob);
+            margin: 0;
+            padding: 0;
+            padding-left: 30px;
+        }
+
+        & p, blockquote{
+            font-size: var(--nm-mob);
+            margin: 0;
+            padding: 0 40px 0 80px;
+        }
+
     }
 
     /* ABOUT: END. */
@@ -465,12 +501,20 @@ body {
     }
 
     /* LEFT ITEMS. */
+
+    .experience-contents #contents-left, .awards-contents #contents-left{
+        padding: 1.5em;
+    }
     .experience-contents #contents-left .experience-items,
     .awards-contents #contents-left .awards-items {
         display: flex;
         width: 100%;
         flex: 0 0 1fr;
         padding: 0 !important;
+        min-height: 300px;
+        height: 300px;
+        max-height: 500px;
+
     }
 
     #contents-left .experience-items div,
@@ -485,6 +529,18 @@ body {
     #exp-contents-right,
     #awards-contents-right {
         flex: 0 0 3fr;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        min-height: 500px;
+        height: 500px;
+        max-height: 800px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        & div{
+            padding: 25px 0;
+            margin: -5em;
+        }
     }
 
     /* EXPERIENCE & AWARDS: END. */
