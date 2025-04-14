@@ -11,8 +11,8 @@
     --nm: 16px;
 
     ---h1-mob: 28px;
-    ---h2-mob: 20px;
-    ---h3-mob: 16px;
+    ---h2-mob: 24px;
+    ---h3-mob: 20px;
     --nm-mob: 14px;
 
     /* COLORS. */
@@ -36,7 +36,9 @@
 }
 
 /* DEFAULTS. */
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -45,7 +47,7 @@
 }
 
 /* BODY SETUP. */
-body {
+html, body {
     background-color: var(--primary);
     color: var(--white);
     min-height: 100vh;
@@ -163,7 +165,7 @@ body {
     & .about-image {
         width: 100%;
         max-width: 500px;
-        min-width: 250px;
+        min-width: 100px;
         /*  Will shrink on smaller screens */
         aspect-ratio: 1 / 1;
         /* Keeps it square, you can tweak */
@@ -404,11 +406,20 @@ body {
 @media (max-width: 1024px) {
 
     body {
-        /* width: 100vw; */
+        /* width: 100%; */
+        /* border: solid 5px yellow; */
         background-color: var(--white);
     }
 
     /* NAVBAR: START. */
+
+    /* NAVBAR. */
+    .nav{
+        width: inherit;
+        padding: 0 var(--p-x-mob);
+    }
+
+    /* HAMBURGER. */
     .hamburger {
         display: flex;
     }
@@ -441,44 +452,48 @@ body {
     /* ABOUT CONTENTS. */
 
     #about {
-        width: 100vw;
+        margin: 0;
+        padding: 0;
     }
 
     #about .about-contents {
         flex-direction: column-reverse;
         justify-content: center;
         gap: 2rem;
+        margin: 0;
+        padding: 0;
     }
     .about-description{
         /* padding: var(--p-y-mob) var(--p-x-mob); */
         /* background-color: red; */
-        width: fit-content;
-        max-width: 500px;
-        min-width: 200px;
+        /* width: fit-content; */
+        
         margin: 0;
-        padding: 0;
+        padding: var(--p-y-mob) var(--p-x-mob);
+        width: 100% !important;
         text-align: center;
 
         & h1{
-            font-size: var(---h1-mob);
+            font-size: var(---h1-mob) !important;
             margin: 0;
             padding: 0;
-            padding-left: 30px;
         }
 
         & h3{
-            font-size: var(---h3-mob);
+            font-size: var(---h3-mob) !important;
             margin: 0;
             padding: 0;
-            padding-left: 30px;
         }
 
         & p, blockquote{
-            font-size: var(--nm-mob);
+            font-size: var(--nm-mob) !important;
             margin: 0;
-            padding: 0 40px 0 80px;
         }
 
+    }
+
+    .about-image{
+        border-radius: 0 !important;
     }
 
     /* ABOUT: END. */
@@ -495,31 +510,35 @@ body {
     /* CONTENTS. */
     .experience-contents,
     .awards-contents {
-        /* display: flex;
-        flex-direction: column; */
-        
+        display: flex;
+        flex-direction: column;
     }
 
     /* LEFT ITEMS. */
 
     .experience-contents #contents-left, .awards-contents #contents-left{
-        padding: 1.5em;
+        padding: 1.5rem;
+        & .contents-title{
+            margin-top: 30px;
+        }
     }
     .experience-contents #contents-left .experience-items,
     .awards-contents #contents-left .awards-items {
         display: flex;
-        width: 100%;
-        flex: 0 0 1fr;
+        flex-direction: row;
+        flex-basis: 3fr;
+        width: 100% !important;
         padding: 0 !important;
-        min-height: 300px;
-        height: 300px;
-        max-height: 500px;
-
+        
+        min-height: 60px;
+        height: 100%;
+        max-height: 120px;
     }
 
     #contents-left .experience-items div,
     #contents-left .awards-items div{
-        width: 200px;
+        min-width: 250px !important;
+        width: 500px !important;
         & p{
             display: none;
         }
@@ -528,18 +547,22 @@ body {
     /* RIGHT ITEMS. */
     #exp-contents-right,
     #awards-contents-right {
-        flex: 0 0 3fr;
+        /* flex: 0 0 3fr; */
         height: auto;
         padding: 0;
         margin: 0;
-        min-height: 500px;
-        height: 500px;
-        max-height: 800px;
+        min-height: 300px;
+        height: 100%;
+        max-height: 600px;
         overflow-y: scroll;
         overflow-x: hidden;
         & div{
             padding: 25px 0;
             margin: -5em;
+        }
+
+        & h2 {
+            margin-top: 30px;
         }
     }
 
@@ -549,12 +572,26 @@ body {
     /* PROJECTS: START. */
 
     /* PROJECT CONTENTS. */
+
+    #projects .projects-contents, #projects .projects-contents .project-items{
+        min-height: 400px;
+        height: 100%;
+        max-height: 600px;
+    }
+
+
     #projects .projects-contents .project-items div {
         /* 
         BETTER FOR TABLET:
         flex: 0 0 calc(100%/2); 
         */
         flex: 0 0 100%;
+        /* padding: 0; */
+        margin: 0;
+        min-height: 400px;
+        max-height: 600px;
+        height: 100%;
+        overflow-y: scroll;
     }
 
     /* PROJECTS: END. */
@@ -562,6 +599,11 @@ body {
 
     /* FOOTER: START. */
     /* FOOTER/CONTACT CONTENTS. */
+    #contact{
+        padding: var(--p-y) var(--p-x-mob);
+        background-color: var(--primary);
+    }
+
     #contact .contact-contents {
         flex-direction: column-reverse;
         gap: 2rem;
