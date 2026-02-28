@@ -52,7 +52,7 @@ const data = {
             title: "www.nishchalbaniya.com.np",
             mustsee: true,
             descrption: "Developed a portfolio website of Mr. Nishchal Baniya along with my team (Lv. 1 Alchemy).",
-            url: "https://profiler-kappa.vercel.app",
+            url: "https://piyush-lal-shrestha-2000.github.io/nishchalbaniya.com.np/",
             tools: "HTML, CSS, JS",
             tags: "random, profile, portfolio, work",
         },
